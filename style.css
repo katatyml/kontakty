@@ -8,3 +8,47 @@ body {
 }
 
 /* ---------------------------------------------------- */
+h1 {
+	text-align: center;
+}
+
+img {
+	border-radius: 50%;
+	max-width: 100%;
+	margin: 10px
+}
+
+.popis {
+	padding: 10px;
+}
+
+.osoba {
+	border: grey solid 1px;
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+@media (min-width: 540px) {
+	.tym {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.osoba {
+		display: flex;
+		width: calc(100% / 2 - 20px);
+		justify-content: flex-start;
+		align-items: center;
+		text-align: left;
+	}
+}
+
+@media (min-width: 960px) {
+	
+	.osoba {
+		display: block;
+		text-align: center;
+		width: calc(100% / 4 - 20px)
+	}
+}
